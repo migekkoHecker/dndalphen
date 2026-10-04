@@ -112,7 +112,7 @@ header .wrap { display: flex; align-items: center; justify-content: space-betwee
 	padding: 54px 52px 56px;
 	clip-path: polygon(0 3%, 4% 0, 12% 2%, 24% 0, 38% 2%, 52% 0, 66% 2%, 80% 0, 93% 2%, 100% 0, 99% 18%, 100% 36%, 98.5% 55%, 100% 74%, 99% 100%, 90% 98%, 76% 100%, 60% 98%, 44% 100%, 28% 98.5%, 14% 100%, 5% 98%, 0 100%, 1.2% 78%, 0 58%, 1.5% 38%, 0 20%);
 }
-h1 { font-family: "Pirata One", "IM Fell English", serif; font-weight: 400; font-size: clamp(2.8rem, 6vw, 4.6rem); line-height: 1; color: #3a1d0c; }
+h1 { font-family: "Pirata One", "IM Fell English", serif; font-weight: 400; font-size: clamp(2.5rem, 5vw, 3.9rem); line-height: 1; color: #3a1d0c; }
 .scroll p { margin-top: 22px; max-width: 30em; }
 .scroll p::first-letter {
 	font-family: "Pirata One", serif;
@@ -130,7 +130,6 @@ h1 { font-family: "Pirata One", "IM Fell English", serif; font-weight: 400; font
 .die-btn:hover { transform: rotate(-4deg) scale(1.03); }
 .die-btn.rolling { animation: roll .7s ease-in-out; }
 @keyframes roll { 0% { transform: rotate(-9deg) scale(1); } 50% { transform: rotate(171deg) scale(1.12); } 100% { transform: rotate(351deg) scale(1); } }
-.die-msg { margin-top: 14px; min-height: 1.6em; font-style: italic; color: var(--muted); font-size: 1.05rem; }
 
 /* sections */
 section { padding: 72px 0; }
@@ -268,7 +267,7 @@ footer a { text-underline-offset: 3px; }
 		<div class="wrap">
 			<div class="scroll-wrap">
 				<div class="scroll parch">
-					<h1>Dungeons & Dragons in Alphen</h1>
+					<h1>Dungeons & Dragons in Alphen aan den Rijn</h1>
 					<p>Zin in D&D, maar geen groep om mee te spelen? DND Alphen is een Discord-server voor jongeren uit Alphen aan den Rijn en omgeving. Hier vind je andere spelers, een Dungeon Master of mensen om je eerste campaign mee te beginnen.</p>
 					<a class="btn" href="https://discord.gg/qmmmthWu42">Join de Discord</a>
 					<small>Gratis, voor jongeren van 13 tot 22+, en beginners zijn welkom.</small>
@@ -285,7 +284,7 @@ footer a { text-underline-offset: 3px; }
 					<line x1="154" y1="136" x2="100" y2="192"/><line x1="46" y1="136" x2="100" y2="192"/>
 				</g>
 				<text x="100" y="116" text-anchor="middle" font-family="Pirata One, serif" font-size="46" fill="#f6e7cf" id="die-num">20</text>
-			</svg></button><p class="die-msg" id="die-msg" aria-live="polite">Klik om te gooien</p></div>
+			</svg></button></div>
 		</div>
 	</div>
 
@@ -423,7 +422,6 @@ footer a { text-underline-offset: 3px; }
 	var die = document.getElementById('die');
 	if (!die) return;
 	var num = document.getElementById('die-num');
-	var msg = document.getElementById('die-msg');
 	var busy = false;
 	var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -431,9 +429,6 @@ footer a { text-underline-offset: 3px; }
 
 	function land(n) {
 		num.textContent = n;
-		msg.textContent = n === 20 ? 'Natuurlijke 20! Dat is een goed teken.'
-			: n === 1 ? 'Natuurlijke 1... dat begint goed.'
-			: 'Je gooide een ' + n + '.';
 		busy = false;
 	}
 
