@@ -214,14 +214,14 @@ details p { padding-bottom: 18px; color: var(--muted); }
 footer { background: var(--wood); border-top: 3px double var(--wood-line); padding: 26px 0; color: var(--muted); font-size: 1rem; }
 footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; }
 
-/* what-is section with skills */
+/* what-is section */
 .two { display: grid; grid-template-columns: 1.1fr .9fr; gap: 60px; align-items: start; }
-.skills-title { font-family: "Pirata One", serif; font-weight: 400; font-size: 1.6rem; margin-bottom: 14px; }
-ul.skills { list-style: none; }
-ul.skills li { padding: 12px 0; border-bottom: 1px dashed var(--wood-line); color: var(--muted); font-size: 1.12rem; line-height: 1.4; }
-ul.skills li:first-child { padding-top: 0; }
-ul.skills li:last-child { border-bottom: 0; }
-ul.skills strong { display: block; font-weight: 400; font-size: 1.3rem; color: var(--text); }
+.pillars-title { font-family: "Pirata One", serif; font-weight: 400; font-size: 1.6rem; margin-bottom: 14px; }
+ul.pillars { list-style: none; }
+ul.pillars li { padding: 12px 0; border-bottom: 1px dashed var(--wood-line); color: var(--muted); font-size: 1.12rem; line-height: 1.4; }
+ul.pillars li:first-child { padding-top: 0; }
+ul.pillars li:last-child { border-bottom: 0; }
+ul.pillars strong { display: block; font-weight: 400; font-size: 1.3rem; color: var(--text); }
 .mail { color: var(--gold); text-underline-offset: 3px; }
 footer a { text-underline-offset: 3px; }
 @media (max-width: 820px) {
@@ -268,9 +268,9 @@ footer a { text-underline-offset: 3px; }
 			<div class="scroll-wrap">
 				<div class="scroll parch">
 					<h1>Dungeons & Dragons in Alphen aan den Rijn</h1>
-					<p>Zin in D&D, maar geen groep om mee te spelen? DND Alphen is een Discord-server voor jongeren uit Alphen aan den Rijn en omgeving. Hier vind je andere spelers, een Dungeon Master of mensen om je eerste campaign mee te beginnen.</p>
+					<p>DND Alphen is een Discord-server voor jongeren uit Alphen aan den Rijn en omgeving die D&D willen spelen. Je vindt hier mensen om mee te spelen, ook als je nog nooit een dobbelsteen hebt aangeraakt.</p>
 					<a class="btn" href="https://discord.gg/qmmmthWu42">Join de Discord</a>
-					<small>Gratis, voor jongeren van 13 tot 22+, en beginners zijn welkom.</small>
+					<small>Gratis. Voor 13 tot 22+. Beginners welkom.</small>
 				</div>
 			</div>
 
@@ -293,17 +293,16 @@ footer a { text-underline-offset: 3px; }
 	<section id="wat-is-dnd">
 		<div class="wrap two">
 			<div class="prose">
-				<h2>Wat is Dungeons & Dragons?</h2>
-				<p>D&D is een rollenspel dat je met een paar mensen aan tafel speelt, of online. Eén van jullie is de Dungeon Master: die bedenkt de wereld en vertelt wat er gebeurt. De anderen spelen een eigen personage dat ze zelf verzinnen.</p>
-				<p>Jij zegt wat je personage doet, de DM vertelt wat er dan gebeurt, en soms beslist een dobbelsteen of het lukt. Er is geen winnaar. Wel veel verrassingen, en meestal flink wat gelach.</p>
+				<h2>Wat is D&D?</h2>
+				<p>Dungeons & Dragons is een tabletop-rollenspel. Eén speler is de Dungeon Master (DM) en leidt het verhaal en de wereld, de anderen spelen elk een eigen personage. De regels en de dobbelstenen bepalen wat lukt, en wat er daarna gebeurt bepaalt de hele tafel samen.</p>
+				<p>Sommige groepen spelen één avond, een one-shot. Andere zitten jaren in dezelfde campaign. Alles ertussen kan ook, en je hoeft de regels niet te kennen om aan te schuiven.</p>
 			</div>
 			<div>
-				<h3 class="skills-title">Ondertussen train je ook</h3>
-				<ul class="skills">
-					<li><strong>Creativiteit</strong>Je bedenkt personages, verhalen en oplossingen.</li>
-					<li><strong>Samenwerken</strong>Je overlegt en maakt samen keuzes.</li>
-					<li><strong>Communicatie</strong>Je luistert naar elkaar en brengt je ideeën duidelijk over.</li>
-					<li><strong>Problemen oplossen</strong>Elke situatie kun je op meerdere manieren aanpakken.</li>
+				<h3 class="pillars-title">Waar een sessie meestal over gaat</h3>
+				<ul class="pillars">
+					<li><strong>Verkennen</strong>Ruïnes, steden, dungeons en alles daartussen.</li>
+					<li><strong>Praten</strong>Onderhandelen, liegen, overtuigen, bondgenoten en vijanden maken.</li>
+					<li><strong>Vechten</strong>Tactische gevechten met je klasse, spreuken en uitrusting.</li>
 				</ul>
 			</div>
 		</div>
@@ -313,11 +312,11 @@ footer a { text-underline-offset: 3px; }
 		<section>
 			<div class="wrap">
 				<h2>Het prikbord</h2>
-				<p style="color:var(--muted);max-width:30em">Dit zoeken we, en dit kun je bij ons vinden.</p>
+				<p style="color:var(--muted);max-width:30em">Wie we zoeken, en wat er verder rondslingert.</p>
 				<div class="notes">
 					<article class="note real parch w5" style="--r:-2deg;--y:4px">
 						<h3>Gezocht: spelers</h3>
-						<p>Heb je een groep waar nog iemand bij kan, of zoek je zelf een groep? Zeg in de Discord wat je zoekt, dan kijken we samen.</p>
+						<p>Zoek je een groep, of heeft jouw groep nog een plek over? Laat het weten in de Discord.</p>
 					</article>
 					<article class="note parch joke dark tape w3" style="--r:3deg;--x:14px;--y:22px">
 						<h3>Potion tester gezocht</h3>
@@ -333,7 +332,7 @@ footer a { text-underline-offset: 3px; }
 					</article>
 					<article class="note real parch w4" style="--r:1.6deg;--y:30px">
 						<h3>Gezocht: Dungeon Masters</h3>
-						<p>Wil je verhalen vertellen? Zet je eigen campaign op, of begin met één avond.</p>
+						<p>Iemand moet het verhaal vertellen. Begin klein, met één avond, dan merk je vanzelf of je het leuk vindt.</p>
 					</article>
 					<article class="note parch joke dark nail w5" style="--r:-1.2deg;--x:-10px;--y:8px">
 						<h3>Draak gevonden</h3>
@@ -346,7 +345,7 @@ footer a { text-underline-offset: 3px; }
 					</article>
 					<article class="note real parch w4" style="--r:2.2deg;--y:12px">
 						<h3>Beginners welkom</h3>
-						<p>Nog nooit gedobbeld? Prima. De regels leer je tijdens het spelen.</p>
+						<p>Nooit gespeeld? Dan ben je niet de enige. De regels leer je door te spelen.</p>
 					</article>
 					<article class="note parch joke pale tape w3" style="--r:-2deg;--x:-4px;--y:34px">
 						<p>Herberg: vandaag geen bard. Hij zit in de kelder. Vraag niet waarom.</p>
@@ -360,9 +359,9 @@ footer a { text-underline-offset: 3px; }
 		<div class="wrap">
 			<h2>Zo kom je in een groep</h2>
 			<ol class="steps">
-				<li><div><strong>Join de Discord</strong><span>Dat is onze plek om af te spreken.</span></div></li>
-				<li><div><strong>Vertel wat je zoekt</strong><span>Wil je spelen, een DM worden, of eerst kijken hoe het werkt?</span></div></li>
-				<li><div><strong>Zoek je mensen erbij</strong><span>Sluit aan bij een groep of start zelf een nieuwe campaign.</span></div></li>
+				<li><div><strong>Join de Discord</strong><span>Daar spreken we af.</span></div></li>
+				<li><div><strong>Zeg wat je zoekt</strong><span>Speler, DM, of eerst even meekijken.</span></div></li>
+				<li><div><strong>Speel een eerste keer</strong><span>Sluit aan bij een groep of start er zelf een.</span></div></li>
 			</ol>
 		</div>
 	</section>
@@ -374,38 +373,22 @@ footer a { text-underline-offset: 3px; }
 			<h2>Veelgestelde vragen</h2>
 			<details>
 				<summary>Moet ik al ervaring hebben?</summary>
-				<p>Nee. Veel mensen beginnen zonder ooit gespeeld te hebben, en leren de regels tijdens het spelen.</p>
+				<p>Nee. De meeste mensen leren het door te spelen, het is wel handig om te weten hoe je een character maakt en de basisregels. Op youtube zijn er heel makkelijk video's te vinden die dit uitleggen</p>
 			</details>
 			<details>
 				<summary>Waar vind ik de regels van D&D?</summary>
-				<p>Wizards of the Coast heeft gratis basisregels (in het Engels) op <a class="mail" href="https://www.dndbeyond.com/sources/dnd/free-rules" target="_blank" rel="noopener">D&D Beyond</a>. Je hoeft ze niet uit je hoofd te kennen om te beginnen: de Dungeon Master helpt je op weg.</p>
-			</details>
-			<details>
-				<summary>Voor wie is DND Alphen?</summary>
-				<p>Voor jongeren van 13 tot 22+ in Alphen aan den Rijn en omgeving.</p>
-			</details>
-			<details>
-				<summary>Wat kost het?</summary>
-				<p>Meedoen aan de Discord kost niets.</p>
-			</details>
-			<details>
-				<summary>Hoe veilig is de Discord?</summary>
-				<p>De server heeft vaste regels en moderators die berichten kunnen verwijderen, waarschuwingen en time-outs kunnen geven en leden kunnen verwijderen. Problemen kun je altijd bij een moderator melden. De regels staan in de server.</p>
-			</details>
-			<details>
-				<summary>Ik werk op een school of ben ouder. Mag ik DND Alphen delen?</summary>
-				<p>Graag. Je mag de link van deze website gebruiken, bijvoorbeeld in een nieuwsbrief of op een mededelingenbord. Voor vragen mail je naar <a class="mail" href="mailto:email@dndalphen.nl">email@dndalphen.nl</a>.</p>
+				<p>Wizards of the Coast heeft gratis basisregels (in het Engels) op <a class="mail" href="https://www.dndbeyond.com/sources/dnd/free-rules" target="_blank" rel="noopener">D&D Beyond</a>.</p>
 			</details>
 			<details>
 				<summary>Ik wil Dungeon Master worden. Kan dat?</summary>
-				<p>Ja. Laat het weten in de Discord, dan kun je je eigen groep opzetten of eerst met anderen meedenken.</p>
+				<p>Ja, graag. Laat het weten in de Discord. Je kunt een eigen groep starten of eerst met anderen overleggen.</p>
 			</details>
 		</div>
 	</section>
 
 	<div class="final">
 		<div class="wrap">
-			<h2>Je eerste avontuur begint met één klik.</h2>
+			<h2>Kom gewoon eens kijken.</h2>
 			<a class="btn" href="https://discord.gg/qmmmthWu42">Join de Discord</a>
 		</div>
 	</div>
@@ -414,7 +397,7 @@ footer a { text-underline-offset: 3px; }
 <footer>
 	<div class="wrap">
 		<div>© 2026 DND Alphen</div>
-		<div>Een initiatief van Miguel de la Torre · <a href="mailto:email@dndalphen.nl">email@dndalphen.nl</a></div>
+		<div>Vragen? Stuur een mail naar · <a href="mailto:email@dndalphen.nl">email@dndalphen.nl</a></div>
 	</div>
 </footer>
 <script>
