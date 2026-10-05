@@ -214,19 +214,10 @@ details p { padding-bottom: 18px; color: var(--muted); }
 footer { background: var(--wood); border-top: 3px double var(--wood-line); padding: 26px 0; color: var(--muted); font-size: 1rem; }
 footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; }
 
-/* what-is section */
-.two { display: grid; grid-template-columns: 1.1fr .9fr; gap: 60px; align-items: start; }
-.pillars-title { font-family: "Pirata One", serif; font-weight: 400; font-size: 1.6rem; margin-bottom: 14px; }
-ul.pillars { list-style: none; }
-ul.pillars li { padding: 12px 0; border-bottom: 1px dashed var(--wood-line); color: var(--muted); font-size: 1.12rem; line-height: 1.4; }
-ul.pillars li:first-child { padding-top: 0; }
-ul.pillars li:last-child { border-bottom: 0; }
-ul.pillars strong { display: block; font-weight: 400; font-size: 1.3rem; color: var(--text); }
 .mail { color: var(--gold); text-underline-offset: 3px; }
 footer a { text-underline-offset: 3px; }
 @media (max-width: 820px) {
-	.two { grid-template-columns: 1fr; gap: 32px; }
-}
+	}
 
 @media (max-width: 820px) {
 	.hero { padding: 40px 0 60px; }
@@ -253,7 +244,6 @@ footer a { text-underline-offset: 3px; }
 	<div class="wrap">
 		<a class="logo" href="/">DND Alphen</a>
 		<nav class="nav" aria-label="Hoofdnavigatie">
-			<a href="#wat-is-dnd">Wat is D&D?</a>
 			<a href="#prikbord">Prikbord</a>
 			<a href="#meedoen">Meedoen</a>
 			<a href="#vragen">Vragen</a>
@@ -268,9 +258,9 @@ footer a { text-underline-offset: 3px; }
 			<div class="scroll-wrap">
 				<div class="scroll parch">
 					<h1>Dungeons & Dragons in Alphen aan den Rijn</h1>
-					<p>DND Alphen is een Discord-server voor jongeren uit Alphen aan den Rijn en omgeving die D&D willen spelen. Je vindt hier mensen om mee te spelen, ook als je nog nooit een dobbelsteen hebt aangeraakt.</p>
+					<p>Heb je van D&D gehoord, of wil je het eens proberen, maar ken je niemand om mee te spelen? DND Alphen is een Discord-server voor jongeren uit Alphen aan den Rijn en omgeving. Hier vind je een groep.</p>
 					<a class="btn" href="https://discord.gg/qmmmthWu42">Join de Discord</a>
-					<small>Gratis. Voor 13 tot 22+. Beginners welkom.</small>
+					<small>Gratis. Voor 13 tot 22+. Ook als je nog nooit hebt gespeeld.</small>
 				</div>
 			</div>
 
@@ -287,26 +277,6 @@ footer a { text-underline-offset: 3px; }
 			</svg></button></div>
 		</div>
 	</div>
-
-	<hr class="divider">
-
-	<section id="wat-is-dnd">
-		<div class="wrap two">
-			<div class="prose">
-				<h2>Wat is D&D?</h2>
-				<p>Dungeons & Dragons is een tabletop-rollenspel. Eén speler is de Dungeon Master (DM) en leidt het verhaal en de wereld, de anderen spelen elk een eigen personage. De regels en de dobbelstenen bepalen wat lukt, en wat er daarna gebeurt bepaalt de hele tafel samen.</p>
-				<p>Sommige groepen spelen één avond, een one-shot. Andere zitten jaren in dezelfde campaign. Alles ertussen kan ook, en je hoeft de regels niet te kennen om aan te schuiven.</p>
-			</div>
-			<div>
-				<h3 class="pillars-title">Waar een sessie meestal over gaat</h3>
-				<ul class="pillars">
-					<li><strong>Verkennen</strong>Ruïnes, steden, dungeons en alles daartussen.</li>
-					<li><strong>Praten</strong>Onderhandelen, liegen, overtuigen, bondgenoten en vijanden maken.</li>
-					<li><strong>Vechten</strong>Tactische gevechten met je klasse, spreuken en uitrusting.</li>
-				</ul>
-			</div>
-		</div>
-	</section>
 
 	<div class="board" id="prikbord">
 		<section>
@@ -360,7 +330,7 @@ footer a { text-underline-offset: 3px; }
 			<h2>Zo kom je in een groep</h2>
 			<ol class="steps">
 				<li><div><strong>Join de Discord</strong><span>Daar spreken we af.</span></div></li>
-				<li><div><strong>Zeg wat je zoekt</strong><span>Speler, DM, of eerst even meekijken.</span></div></li>
+				<li><div><strong>Zeg wat je zoekt</strong><span>Een groep, een DM, of eerst even meekijken.</span></div></li>
 				<li><div><strong>Speel een eerste keer</strong><span>Sluit aan bij een groep of start er zelf een.</span></div></li>
 			</ol>
 		</div>
@@ -371,6 +341,10 @@ footer a { text-underline-offset: 3px; }
 	<section id="vragen">
 		<div class="wrap">
 			<h2>Veelgestelde vragen</h2>
+			<details>
+				<summary>Ik heb alleen van D&D gehoord. Kan ik meedoen?</summary>
+				<p>Ja. Zeg in de Discord dat je het wilt proberen, dan zoeken we samen een groep waar je kunt aanschuiven.</p>
+			</details>
 			<details>
 				<summary>Moet ik al ervaring hebben?</summary>
 				<p>Nee. De meeste mensen leren het door te spelen, het is wel handig om te weten hoe je een character maakt en de basisregels. Op youtube zijn er heel makkelijk video's te vinden die dit uitleggen</p>
